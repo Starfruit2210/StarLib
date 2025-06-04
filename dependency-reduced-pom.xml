@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.muhammaddaffa</groupId>
-  <artifactId>MDLib</artifactId>
-  <name>MDLib</name>
-  <version>2.0.11</version>
+  <groupId>com.starfruit</groupId>
+  <artifactId>StarLib</artifactId>
+  <name>StarLib</name>
+  <version>2.0.13</version>
   <description>A library for plugin that was created for helping spigot plugin development</description>
   <url>https://muhammaddaffa.com</url>
   <build>
@@ -41,31 +41,31 @@
           <relocations>
             <relocation>
               <pattern>dev.jorel.commandapi</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.commandapi</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.commandapi</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.tchristofferson.configupdater</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.configupdater</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.configupdater</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.cryptomorin.xseries</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.xseries</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.xseries</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.jeff_media.updatechecker</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.utils.updatechecker</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.utils.updatechecker</shadedPattern>
             </relocation>
             <relocation>
               <pattern>fr.mrmicky.fastboard</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.fastboard</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.fastboard</shadedPattern>
             </relocation>
             <relocation>
               <pattern>fr.mrmicky.fastinv</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.fastinv</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.fastinv</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.jeff_media.customblockdata</pattern>
-              <shadedPattern>com.muhammaddaffa.mdlib.customblockdata</shadedPattern>
+              <shadedPattern>com.starfruit.starlib.customblockdata</shadedPattern>
             </relocation>
           </relocations>
           <filters>
@@ -131,7 +131,7 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.21.4-R0.1-SNAPSHOT</version>
+      <version>1.21.5-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
