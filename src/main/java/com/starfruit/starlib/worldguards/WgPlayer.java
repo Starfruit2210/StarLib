@@ -1,10 +1,10 @@
-package com.muhammaddaffa.mdlib.worldguards;
+package com.starfruit.starlib.worldguards;
 
-import com.muhammaddaffa.mdlib.utils.Executor;
-import com.muhammaddaffa.mdlib.worldguards.events.RegionEnterEvent;
-import com.muhammaddaffa.mdlib.worldguards.events.RegionEnteredEvent;
-import com.muhammaddaffa.mdlib.worldguards.events.RegionLeaveEvent;
-import com.muhammaddaffa.mdlib.worldguards.events.RegionLeftEvent;
+import com.starfruit.starlib.utils.Executor;
+import com.starfruit.starlib.worldguards.events.RegionEnterEvent;
+import com.starfruit.starlib.worldguards.events.RegionEnteredEvent;
+import com.starfruit.starlib.worldguards.events.RegionLeaveEvent;
+import com.starfruit.starlib.worldguards.events.RegionLeftEvent;
 import com.sk89q.worldguard.protection.ApplicableRegionSet;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import org.bukkit.Bukkit;

@@ -1,4 +1,4 @@
-package com.muhammaddaffa.mdlib.utils;
+package com.starfruit.starlib.utils;
 
 import com.cryptomorin.xseries.XSound;
 import me.clip.placeholderapi.PlaceholderAPI;

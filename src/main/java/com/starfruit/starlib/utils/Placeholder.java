@@ -1,4 +1,4 @@
-package com.muhammaddaffa.mdlib.utils;
+package com.starfruit.starlib.utils;
 
 import java.util.HashMap;
 import java.util.List;

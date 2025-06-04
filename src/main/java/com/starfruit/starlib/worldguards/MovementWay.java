@@ -1,4 +1,4 @@
-package com.muhammaddaffa.mdlib.worldguards;
+package com.starfruit.starlib.worldguards;
 
 public enum MovementWay {
     /**

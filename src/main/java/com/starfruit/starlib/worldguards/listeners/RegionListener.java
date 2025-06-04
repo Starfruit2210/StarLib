@@ -1,10 +1,10 @@
-package com.muhammaddaffa.mdlib.worldguards.listeners;
+package com.starfruit.starlib.worldguards.listeners;
 
-import com.muhammaddaffa.mdlib.worldguards.MovementWay;
-import com.muhammaddaffa.mdlib.worldguards.SimpleWorldGuardAPI;
-import com.muhammaddaffa.mdlib.worldguards.WgPlayer;
-import com.muhammaddaffa.mdlib.worldguards.events.RegionLeaveEvent;
-import com.muhammaddaffa.mdlib.worldguards.events.RegionLeftEvent;
+import com.starfruit.starlib.worldguards.MovementWay;
+import com.starfruit.starlib.worldguards.SimpleWorldGuardAPI;
+import com.starfruit.starlib.worldguards.WgPlayer;
+import com.starfruit.starlib.worldguards.events.RegionLeaveEvent;
+import com.starfruit.starlib.worldguards.events.RegionLeftEvent;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;

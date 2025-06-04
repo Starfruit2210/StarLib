@@ -1,6 +1,6 @@
-package com.muhammaddaffa.mdlib.utils;
+package com.starfruit.starlib.utils;
 
-import com.muhammaddaffa.mdlib.MDLib;
+import com.starfruit.starlib.StarLib;
 import com.tchristofferson.configupdater.ConfigUpdater;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
@@ -40,7 +40,7 @@ public class Config {
             }
             // Get the config file
             try {
-                ConfigUpdater.update(MDLib.instance(), config.getFile().getName(), config.getFile());
+                ConfigUpdater.update(StarLib.instance(), config.getFile().getName(), config.getFile());
             } catch(Exception ex) {
                 Logger.severe("Failed to update the " + config.getFile().getName());
                 ex.printStackTrace();
@@ -60,7 +60,7 @@ public class Config {
     private final List<String> ignored = new ArrayList<>();
 
     public Config(String configName, String directory, boolean shouldReload) {
-        JavaPlugin plugin = MDLib.instance();
+        JavaPlugin plugin = StarLib.instance();
         this.configName = configName;
         this.shouldReload = shouldReload;
 

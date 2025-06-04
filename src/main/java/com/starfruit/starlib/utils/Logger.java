@@ -1,30 +1,30 @@
-package com.muhammaddaffa.mdlib.utils;
+package com.starfruit.starlib.utils;
 
-import com.muhammaddaffa.mdlib.MDLib;
+import com.starfruit.starlib.StarLib;
 
 public class Logger {
 
     public static void info(String... messages) {
         for (String message : messages) {
-            MDLib.instance().getLogger().info(message);
+            StarLib.instance().getLogger().info(message);
         }
     }
 
     public static void warning(String... messages) {
         for (String message : messages) {
-            MDLib.instance().getLogger().warning(message);
+            StarLib.instance().getLogger().warning(message);
         }
     }
 
     public static void severe(String... messages) {
         for (String message : messages) {
-            MDLib.instance().getLogger().severe(message);
+            StarLib.instance().getLogger().severe(message);
         }
     }
 
     public static void finest(String... messages) {
         for (String message : messages) {
-            MDLib.instance().getLogger().finest(message);
+            StarLib.instance().getLogger().finest(message);
         }
     }
     

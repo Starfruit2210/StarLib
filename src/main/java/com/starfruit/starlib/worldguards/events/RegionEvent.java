@@ -1,6 +1,6 @@
-package com.muhammaddaffa.mdlib.worldguards.events;
+package com.starfruit.starlib.worldguards.events;
 
-import com.muhammaddaffa.mdlib.worldguards.MovementWay;
+import com.starfruit.starlib.worldguards.MovementWay;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;

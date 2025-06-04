@@ -1,4 +1,4 @@
-package com.muhammaddaffa.mdlib.hooks;
+package com.starfruit.starlib.hooks;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;

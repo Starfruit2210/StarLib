@@ -1,4 +1,4 @@
-package com.muhammaddaffa.mdlib.worldguards;
+package com.starfruit.starlib.worldguards;
 
 import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldguard.WorldGuard;

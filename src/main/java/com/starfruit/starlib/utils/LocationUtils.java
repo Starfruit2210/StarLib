@@ -1,4 +1,4 @@
-package com.muhammaddaffa.mdlib.utils;
+package com.starfruit.starlib.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

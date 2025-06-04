@@ -1,20 +1,16 @@
-package com.muhammaddaffa.mdlib;
+package com.starfruit.starlib;
 
 import com.jeff_media.customblockdata.CustomBlockData;
-import com.muhammaddaffa.mdlib.hooks.VaultEconomy;
-import com.muhammaddaffa.mdlib.utils.Common;
-import com.muhammaddaffa.mdlib.worldguards.listeners.RegionListener;
+import com.starfruit.starlib.hooks.VaultEconomy;
+import com.starfruit.starlib.worldguards.listeners.RegionListener;
 import dev.jorel.commandapi.CommandAPI;
 import dev.jorel.commandapi.CommandAPIBukkitConfig;
 import fr.mrmicky.fastinv.FastInvManager;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.List;
-
-public final class MDLib {
+public final class StarLib {
 
     private static JavaPlugin instance;
 
