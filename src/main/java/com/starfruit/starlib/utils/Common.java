@@ -29,6 +29,21 @@ public class Common {
     private static final Pattern HEX_PATTERN = Pattern.compile("(?:&#|#)([A-Fa-f0-9]{6})");
     private static final DecimalFormat decimalFormat = new DecimalFormat("###,###,###,###,###.##");
 
+
+    public static String formatTime(int number) {
+        int hour = number / 3600;
+        int minute = (number % 3600) / 60;
+        int second = number % 60;
+
+        // build
+        StringBuilder builder = new StringBuilder();
+        if (hour > 0) builder.append(hour).append("h ");
+        if (minute > 0 || hour > 0) builder.append(minute).append("m ");
+        builder.append(second).append("s");
+
+        return builder.toString();
+    }
+
     public static double getRandomNumberBetween(double min, double max) {
         return ThreadLocalRandom.current().nextDouble(max - min) + min;
     }
