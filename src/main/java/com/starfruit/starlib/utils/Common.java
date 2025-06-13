@@ -30,14 +30,32 @@ public class Common {
     private static final DecimalFormat decimalFormat = new DecimalFormat("###,###,###,###,###.##");
 
 
+    public static String formatTime(long number) {
+        long day = number / 86400;
+        long hour = number / 3600;
+        long minute = (number % 3600) / 60;
+        long second = number % 60;
+
+        // build
+        StringBuilder builder = new StringBuilder();
+        if (day > 0) builder.append(day).append("d ");
+        if (hour > 0 || day > 0) builder.append(hour).append("h ");
+        if (minute > 0 || hour > 0) builder.append(minute).append("m ");
+        builder.append(second).append("s");
+
+        return builder.toString();
+    }
+
     public static String formatTime(int number) {
+        int day = number / 86400;
         int hour = number / 3600;
         int minute = (number % 3600) / 60;
         int second = number % 60;
 
         // build
         StringBuilder builder = new StringBuilder();
-        if (hour > 0) builder.append(hour).append("h ");
+        if (day > 0) builder.append(day).append("d ");
+        if (hour > 0 || day > 0) builder.append(hour).append("h ");
         if (minute > 0 || hour > 0) builder.append(minute).append("m ");
         builder.append(second).append("s");
 
