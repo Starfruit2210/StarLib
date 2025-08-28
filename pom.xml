@@ -6,7 +6,7 @@
 
     <groupId>com.starfruit</groupId>
     <artifactId>StarLib</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.2</version>
 
     <name>StarLib</name>
 
@@ -36,31 +36,31 @@
                     <relocations>
                         <relocation>
                             <pattern>dev.jorel.commandapi</pattern>
-                            <shadedPattern>com.starfruit.starlib.commandapi</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.commandapi</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.tchristofferson.configupdater</pattern>
-                            <shadedPattern>com.starfruit.starlib.configupdater</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.configupdater</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.cryptomorin.xseries</pattern>
-                            <shadedPattern>com.starfruit.starlib.xseries</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.xseries</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.jeff_media.updatechecker</pattern>
-                            <shadedPattern>com.starfruit.starlib.utils.updatechecker</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.utils.updatechecker</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>fr.mrmicky.fastboard</pattern>
-                            <shadedPattern>com.starfruit.starlib.fastboard</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.fastboard</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>fr.mrmicky.fastinv</pattern>
-                            <shadedPattern>com.starfruit.starlib.fastinv</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.fastinv</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.jeff_media.customblockdata</pattern>
-                            <shadedPattern>com.starfruit.starlib.customblockdata</shadedPattern>
+                            <shadedPattern>com.muhammaddaffa.mdlib.customblockdata</shadedPattern>
                         </relocation>
                     </relocations>
                     <!-- Here you can remove the classes you don't use. -->
@@ -120,7 +120,7 @@
         </repository>
         <repository>
             <id>placeholderapi</id>
-            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <url>https://repo.helpch.at/releases/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
@@ -143,12 +143,42 @@
             <name>Minecraft Libraries</name>
             <url>https://libraries.minecraft.net/</url>
         </repository>
+        <repository>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>nexo</id>
+            <url>https://repo.nexomc.com/releases</url>
+        </repository>
+        <repository>
+            <id>matteodev</id>
+            <url>https://maven.devs.beer/</url>
+        </repository>
+        <repository>
+            <name>Central Portal Snapshots</name>
+            <id>central-portal-snapshots</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
+            <version>1.21.5-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>-->
+        <!-- paper api -->
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
             <version>1.21.8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
@@ -171,6 +201,26 @@
             <groupId>com.sk89q.worldguard</groupId>
             <artifactId>worldguard-bukkit</artifactId>
             <version>7.1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Nexo -->
+        <dependency>
+            <groupId>com.nexomc</groupId>
+            <artifactId>nexo</artifactId>
+            <version>1.8.0</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- ItemsAdder -->
+        <dependency>
+            <groupId>dev.lone</groupId>
+            <artifactId>api-itemsadder</artifactId>
+            <version>4.0.10</version>
             <scope>provided</scope>
         </dependency>
 
@@ -222,6 +272,13 @@
             <groupId>com.mojang</groupId>
             <artifactId>authlib</artifactId>
             <version>6.0.54</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- head database -->
+        <dependency>
+            <groupId>com.arcaniax</groupId>
+            <artifactId>HeadDatabase-API</artifactId>
+            <version>1.3.2</version>
             <scope>provided</scope>
         </dependency>
         <!-- IntelliJ Annotations -->
